@@ -1,5 +1,11 @@
-$(document).ready(function() {
+(function($) {
+	$(document).ready(function() {
 	var list = "#navigation li";
+
+	$(list).each(function(index) {
+		var link = $(this).find("a");
+		$(this).attr("title",String(index)+". "+$(link).text());
+	});
 
 	function slide(index) {
 		var current = $("#status .index").text();
@@ -30,15 +36,19 @@ $(document).ready(function() {
 		$("#display").attr("src",url);
 		window.location.hash = index;
 	}
+
 	$(list).click(function() {
 		slide($(list).index(this));
 	});
+
 	$("#navigation .next").click(function() {
 		slide(parseInt(slide())+1);
 	});
+
 	$("#navigation .prev").click(function() {
 		slide(parseInt(slide())-1);
 	});
+
 	$(document).bind("keydown","nav",function(event) {
 		switch (event.keyCode) {
 		case 8:
@@ -55,3 +65,4 @@ $(document).ready(function() {
 	var initial = window.location.hash ?  parseInt(window.location.hash.match(/\d+/g)[0]): 0;
 	slide(initial);
 });
+})(jQuery);

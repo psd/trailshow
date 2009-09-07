@@ -1,4 +1,5 @@
 body {
+	font-family: Georgia;
 	margin: 0px;
 	border: none;
 	margin: 0px;
@@ -13,16 +14,27 @@ body {
 }
 #navigation {
 	float: right;
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+	margin: 0; 
+	padding: 0;
+	z-index: 2000;
 }
 #status {
 	float: left;
 }
+#status .title {
+	font-size: 1.5em;
+}
 #navigation, #status {
 	margin-left: 8em;
-	margin-right: 8em;
 }
+
 #navigation p,
 #navigation ol {
+	list-style-type: none; 
+	word-spacing: 0px;
 	display: inline;
 	padding: 0px;
 }
@@ -34,11 +46,15 @@ body {
 	color: #EEE;
 	display: inline;
 	cursor: pointer;
-	border: 2px solid #333;
+	border: 1px solid #333;
 	font-size: 5px;
+	margin-left: -6px;
+	margin-right: 0px;
+	padding: 0px;
 }
 #navigation li.visited {
 	background-color: #333;
+	border: 1px solid #333;
 	color: #333;
 }
 #navigation li.selected {
@@ -52,10 +68,6 @@ body {
 	display: none;
 }
 
-#status {
-	padding-top: 5px;
-	font-family: Georgia;
-}
 #status .index {
 	font-style: bold;
 	font-size: 1.8em;
@@ -63,9 +75,6 @@ body {
 }
 #status .index:after {
 	content: ".";
-}
-#status .title {
-	font-size: 1.5em;
 }
 #status a:link,
 #status a:visited {
