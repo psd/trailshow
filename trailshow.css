@@ -1,0 +1,59 @@
+body {
+	margin: 0px;
+	border: none;
+	margin: 0px;
+}
+#header {
+	margin: 0px;
+	border: 0px;
+	padding: 5px;
+	color: #333333;
+	background-color: #EEE;
+}
+#navigation {
+	float: right;
+}
+#navigation, #status {
+	margin-left: 8em;
+	margin-right: 8em;
+}
+#navigation p,
+#navigation ol {
+	display: inline;
+	padding: 0px;
+}
+#navigation li {
+	color: #EEE;
+	display: inline;
+	cursor: pointer;
+	border: 2px solid #333333;
+	font-size: 5px;
+}
+#navigation li.visited {
+	background-color: #333333;
+	color: #333333;
+}
+#navigation li.selected {
+	background-color: #333333;
+	color: #EEE;
+}
+.presentation li:before {
+	content: "◎";
+}
+.presentation li a {
+	display: none;
+}
+
+#status {
+	padding-top: 5px;
+}
+#status .title {
+	font-weight: bold;
+}
+#status .title {
+	font-weight: bold;
+}
+#status .url {
+	display: block;
+	float: left;
+}
