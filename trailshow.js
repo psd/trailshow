@@ -45,6 +45,7 @@ $(document).ready(function() {
 		case 37:
 			slide(parseInt(slide())-1);
 			break;
+		case 14:
 		case 32:
 		case 39:
 			slide(parseInt(slide())+1);

@@ -26,6 +26,10 @@ body {
 	display: inline;
 	padding: 0px;
 }
+#navigation .nav {
+	cursor: pointer;
+	font-size: 1.1em;
+}
 #navigation li {
 	color: #EEE;
 	display: inline;
