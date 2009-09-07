@@ -24,8 +24,8 @@ $(document).ready(function() {
 		var url = $(link).attr("href");
 
 		$("#status .index").text(index);
-		$("#status .title").text($(link).text());
-		$("#status .url").text(url);
+		$("#status a.title").text($(link).text());
+		$("#status a.title").attr("href",url);
 		$("#display").attr("src",url);
 		window.location.hash = index;
 	}
