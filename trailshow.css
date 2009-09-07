@@ -66,8 +66,12 @@ body {
 	font-size: 1.5em;
 }
 #status a:link,
-#status a:active,
 #status a:visited {
 	color: #333;
 	text-decoration: none;
+}
+
+#status a:active,
+#status a:hover {
+	text-decoration: underline;
 }
