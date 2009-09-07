@@ -53,7 +53,6 @@ body {
 	font-family: Georgia;
 }
 #status .index {
-	font-weight: bold;
 	font-style: bold;
 	font-size: 1.8em;
 	padding-right: 0.5em;
@@ -62,7 +61,6 @@ body {
 	content: ".";
 }
 #status .title {
-	font-weight: bold;
 	font-size: 1.5em;
 }
 #status a:link,
